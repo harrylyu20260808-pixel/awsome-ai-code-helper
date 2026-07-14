@@ -61,7 +61,6 @@ python3 -m http.server 8001 -d english-prompt-library
 
 ```
 ai-code-helper/
-├── app.py                    # FastAPI backend (main web app)
 ├── utils.py                  # Core utilities: prompts, error analysis, code explanation
 ├── requirements.txt          # Python dependencies
 ├── templates/                # HTML templates
@@ -246,9 +245,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📮 Contact
 
-- **Project Homepage**: https://github.com/yourusername/ai-code-helper
-- **Issues**: https://github.com/yourusername/ai-code-helper/issues
-- **Email**: your-email@example.com
+- **Project Homepage**:https://github.com/harrylyu20260808-pixel/awsome-ai-code-helper
+- **Issues**: https://github.com/harrylyu20260808-pixel/awsome-ai-code-helper/issues
+- **Email**: HarryLv20260808@outlook.com
 
 ---
 
