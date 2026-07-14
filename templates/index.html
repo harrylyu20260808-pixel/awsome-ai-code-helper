@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI编程助手 - 代码生成</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI编程助手</h1>
+            <p>面向编程新手的代码生成工具</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="generate">代码生成</button>
+            <button class="tab-btn" data-tab="debug">自动调试</button>
+        </nav>
+
+        <!-- 代码生成页面 -->
+        <div id="generate-tab" class="tab-content active">
+            <div class="card">
+                <h2>📝 生成代码</h2>
+                <p class="subtitle">输入你的需求，AI会自动生成代码</p>
+
+                <div class="form-group">
+                    <label for="requirement">你的需求：</label>
+                    <textarea id="requirement" rows="5" placeholder="例如：写一个Python函数，求两个数的和"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="language">编程语言：</label>
+                    <select id="language">
+                        <option value="Python">Python</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Java">Java</option>
+                        <option value="C++">C++</option>
+                    </select>
+                </div>
+
+                <button id="generate-btn" class="btn btn-primary">
+                    ✨ 生成代码
+                </button>
+            </div>
+
+            <div id="result-area" class="result-area hidden">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>生成的代码</h3>
+                        <div class="actions">
+                            <button id="explain-btn" class="btn btn-secondary">📖 查看解释</button>
+                            <button id="copy-btn" class="btn btn-secondary">📋 复制代码</button>
+                            <button id="download-btn" class="btn btn-secondary">💾 下载代码</button>
+                        </div>
+                    </div>
+                    <div class="code-block">
+                        <pre id="generated-code"><code id="code-content">// 代码将在这里显示</code></pre>
+                    </div>
+                    <div id="explanation-text" class="explanation hidden">
+                        <h4>💡 代码解释</h4>
+                        <p id="explanation-content"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 自动调试页面 -->
+        <div id="debug-tab" class="tab-content hidden">
+            <div class="card">
+                <h2>🐛 自动调试</h2>
+                <p class="subtitle">粘贴报错信息和代码，AI会自动修复</p>
+
+                <div class="form-group">
+                    <label for="error">报错信息：</label>
+                    <textarea id="error" rows="3" placeholder="粘贴完整的错误信息，例如：NameError: name 'x' is not defined"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="debug-code">出错代码：</label>
+                    <textarea id="debug-code" rows="8" placeholder="粘贴你的代码"></textarea>
+                </div>
+
+                <button id="debug-btn" class="btn btn-primary">
+                    🔧 自动修复
+                </button>
+            </div>
+
+            <div id="debug-result" class="result-area hidden">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>🔧 修复结果</h3>
+                        <div class="actions">
+                            <button id="debug-copy-btn" class="btn btn-secondary">📋 复制代码</button>
+                            <button id="debug-download-btn" class="btn btn-secondary">💾 下载代码</button>
+                        </div>
+                    </div>
+                    <div id="error-analysis" class="error-analysis"></div>
+                    <div class="code-block">
+                        <pre id="fixed-code"><code id="debug-code-content">// 修复后的代码将在这里显示</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

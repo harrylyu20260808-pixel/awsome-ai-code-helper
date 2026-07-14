@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI编程助手 - 代码解释</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI编程助手</h1>
+            <p>面向编程新手的代码解释工具</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn" data-tab="generate">代码生成</button>
+            <button class="tab-btn" data-tab="debug">自动调试</button>
+            <button class="tab-btn active" data-tab="explain">代码解释</button>
+        </nav>
+
+        <div class="card">
+            <h2>📖 代码逐行解释</h2>
+            <p class="subtitle">输入代码，AI会逐行解释每一行的作用</p>
+
+            <div class="form-group">
+                <label for="explain-code">你的代码：</label>
+                <textarea id="explain-code" rows="10" placeholder="粘贴要解释的代码"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="line-number">解释第几行：</label>
+                <input type="number" id="line-number" value="1" min="1">
+            </div>
+
+            <button id="explain-btn" class="btn btn-primary">
+                📚 开始解释
+            </button>
+        </div>
+
+        <div id="explain-result" class="result-area hidden">
+            <div class="card">
+                <div class="card-header">
+                    <h3>📚 解释结果</h3>
+                </div>
+                <div id="explanation-content" class="explanation-result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
