@@ -12,8 +12,6 @@
 ![Code style](https://img.shields.io/badge/code%20style-black-000000)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange)
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 [中文文档](#中文文档) | [English Docs](#english-documentation)
 
 An intelligent programming assistant for beginners, featuring code generation, automatic debugging, and code explanation - all without needing to write prompts or understand debugging.
