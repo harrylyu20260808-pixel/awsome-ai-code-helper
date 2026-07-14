@@ -60,7 +60,8 @@ python3 -m http.server 8001 -d english-prompt-library
 ## 📁 Project Structure
 
 ```
-ai-code-helper/
+ai-code-helper/ 
+├── app.py                    # FastAPI backend (main web app)
 ├── utils.py                  # Core utilities: prompts, error analysis, code explanation
 ├── requirements.txt          # Python dependencies
 ├── templates/                # HTML templates
